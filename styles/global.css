@@ -21,7 +21,7 @@ html{
     --grey-light: #E5EAF1;
 
     /* 1rem = 16px = 100%  */
-    font-size: 62.5%; /* 10px */
+    font-size: 62.5% /* 10px */
 
 }
 
@@ -58,7 +58,7 @@ body, button, input, textarea{
 }
 
 /* botoes e input */
-input , button .button{
+input , button, .button{
     border-radius: .8rem;
     height: 5rem;
 }
@@ -66,7 +66,7 @@ input , button .button{
 button, .button{
     font-family: 'Poppins';
     font-weight: 500;
-    line-height: 0;
+    line-height: 0; /* espaçamento entre as linhas do texto */
 
     display: flex;
     align-items: center;
@@ -75,5 +75,34 @@ button, .button{
     background: var(--blue);
     color: var(--white);
 
+    transition: filter .2s; /* tempo de transição do brightness*/
+
     cursor:pointer;
+
+}
+
+button:hover, .button:hover{
+    filter:brightness(1.2);/*aplica brilho no botão*/
+}
+
+button > img
+.button > img{
+    margin-right: 1rem;
+    width: 2rem;
+}
+
+button.outlined,
+.button.outlined{
+    background: var(--white);
+    color: var(--blue);
+    border: .2rem solid var(--blue);
+}
+
+.content header{
+    width: 80%;
+    margin: 3.5rem auto;
+}
+
+.content header img{
+    width: 16.7rem;
 }

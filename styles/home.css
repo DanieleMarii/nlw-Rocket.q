@@ -40,7 +40,12 @@ main h2{
 input{
     border: 0.2rem solid var(--grey-blue);
     padding: 0 1.6rem;
-    height: 5rem;
-    border-radius: .8rem;
+   /* height: 5rem;
+    border-radius: .8rem;*/
 
+}
+
+input, button, .button{
+    width: 100%;
+    margin-bottom: 1.8rem;
 }
