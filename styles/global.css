@@ -26,6 +26,7 @@ html{
 }
 
 body{
+    display: flex;
     height: 100vh; /*define o tamanho da tela */
     /*width: 100vw; /*define onde começa a tela e onde termina */
     background: var(--background);
